@@ -1,0 +1,41 @@
+* {
+    /* border: 1px solid blue; */
+}
+
+html {
+    font-size: 16px;
+}
+/* BANNER //////////////////////////////////////*/
+ 
+.nameBanner {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/nameBannerBackground2.jpg")
+}
+
+
+/* NAVIGATION //////////////////////////////////*/
+.navGroup {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navGroup li {
+    display: inline-flex;
+    padding: 10px 25px;
+    background-color: lightgreen;
+}
+
+.cardDeck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border: 2px dashed green;
+}
