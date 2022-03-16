@@ -1,41 +1,184 @@
-* {
-    /* border: 1px solid blue; */
-}
-
 html {
     font-size: 16px;
-}
+}   
+
+@media only screen and (max-width: 768px){
+    html {
+        font-size: 12px;
+    }}
+@media only screen and (max-width: 450px){
+    html {
+        font-size: 10px;
+    }}
+/*//////////////////////////////////////////////*/
 /* BANNER //////////////////////////////////////*/
+/*//////////////////////////////////////////////*/
  
-.nameBanner {
+.bannerImage {
+    background-image: url("../images/nameBannerBackground2.jpg");
+    background-size: cover;
+}
+.nameOne {
     display: flex;
-    flex-direction: column;
-    background-image: url("../images/nameBannerBackground2.jpg")
+    font-size: 4rem;
+    font-family: Sacramento;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    justify-content: center;
+}
+.nameTwo {
+    display: flex;
+    font-size: 2rem;
+    font-family: Tangerine;    
+    padding: 1rem 5rem;
+    justify-content: center;
 }
 
-
+@media only screen and (max-width: 425px){
+    .nameOne {
+        font-size: 3rem;
+    }
+    .nameTwo {
+        display:none;
+    }
+}
+/*//////////////////////////////////////////////*/
 /* NAVIGATION //////////////////////////////////*/
+/*//////////////////////////////////////////////*/
 .navGroup {
     display: flex;
     justify-content: space-around;
-
+    padding: 0.5rem;
 }
 
 .navGroup li {
     display: inline-flex;
     padding: 10px 25px;
-    background-color: lightgreen;
+    border: 1px solid black;
+    box-shadow: 1rem 0rem 1rem black;
+    border-radius: 5px;
 }
 
+.navGroup a{
+    height: max-content;
+    width: auto;
+}
+
+.navGroup li:hover {
+    animation: navSelect 0.25s; 
+    animation-fill-mode: both;
+}
+
+@keyframes navSelect {
+    from{background-color: rgba(255,255,255,0);}
+    to{background-color: rgba(255,255,255,0.7);}
+}
+/*//////////////////////////////////////////////*/
+/* FEATURES SECTION ////////////////////////////*/
+/*//////////////////////////////////////////////*/
 .cardDeck {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-image: url("../images/nameBannerBackground.jpg");
 }
 
 .card {
     display: flex;
-    height: 300px;
+    flex-direction: column;
+    font-family: 'Tangerine';
+    font-size: 3rem;
+    height: fit-content ;
     width: 300px;
-    border: 2px dashed green;
+    border: 1px solid black;
+    box-shadow: 1rem 0rem 1rem black;
+    border-radius: 5%;
+    overflow: hidden;
+    margin: 1rem;
 }
+
+.card:hover {
+    animation: cardSelect 0.25s; 
+    animation-fill-mode: both;
+
+}
+
+@keyframes cardSelect {
+    from {box-shadow: 1rem 0rem 1rem black;}
+    to {box-shadow: 0 0 15px 15px beige;}
+}
+
+.card p {
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 425px){
+    .card {
+        width: 100%;
+    }
+}
+
+/*//////////////////////////////////////////////*/
+/* FOOTER //////////////////////////////////////*/
+/*//////////////////////////////////////////////*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/nameBannerBackground2.jpg");
+    background-size: cover;
+    width: 100%;
+    font-family: 'Cedarville Cursive';
+}
+
+.quoteContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    background-color: rgba(70, 39, 11, 0.616);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid saddlebrown;  
+}
+
+.quote h3 {
+    font-size: 4rem;
+    justify-content: center;
+}
+
+.quote h2 {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: end;
+}
+/*//////////////////////////////////////////////*/
+/* CONTACT INFO ////////////////////////////////*/
+/*//////////////////////////////////////////////*/
+
+.contact {
+    display: flex;
+    font-size: 2rem;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+.phone {
+    display: flex;
+    margin-top: auto;
+}
+
+.address {
+    display: flex;
+}
+
+@media only screen and (max-width: 550px){
+    .quote h3 {
+        font-size: 3rem;
+    }}

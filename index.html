@@ -14,61 +14,70 @@
         </style>
     </head>
     <header>
-        <div class="bannerImage">
+        <div class="bannerImage" name="home">
             <div class="nameBanner">
                 <div class="nameOne"><p>A Cut Above the Rest</p></div>
                 <div class="nameTwo"><p>Woodworking and Design</p></div>
             </div>
+<!-- NAVIGATION TOP -->
+            <div class="navigation"> 
+                <ul class="navGroup">
+                    <a href="./index.html#home"><li>Home</li></a>
+                    <a href="./index.html#featured"><li>Featured Items</li></a>
+                    <a href="./index.html#contactInfo"><li>Contact</li></a>
+                </ul>
+            </div> 
         </div>  
-        <div class="navigation"> 
-            <ul class="navGroup">
-                <li><a href="">Signs</a></li>
-                <li><a href="">Decor</a></li>
-                <li><a href="">CutOuts</a></li>
-                <li><a href="">Toys</a></li>
-                <li><a href="">Puzzles</a></li>
-                <li><a href="">Wall Art</a></li>
-            </ul>
-        </div> 
+
     </header>
 <!-- FEATURED ITEMS -->
     <body>
-        <div class="cardDeck">
+        <div class="cardDeck" id="featured">
             <div class="signs card">
-                <p>TEXT A</p>
-                <img src="./CARD_IMAGE">
+                <p>Signs</p>
+                <img src="./resources/images/signsCardImg.jpg">
             </div>
             <div class="decor card">
-                <p>TEXT B</p>
-                <img src="./CARD_IMAGE">
+                <p>Decor</p>
+                <img src="./resources/images/decorCardImg.jpg">
             </div>
             <div class="cutouts card">
-                <p>TEXT C</p>
-                <img src="./CARD_IMAGE">
+                <p>Cut Outs</p>
+                <img src="./resources/images/cutoutsCardImg.jpg">
             </div>
             <div class="toys card">
-                <p>TEXT D</p>
-                <img src="./CARD_IMAGE">
+                <p>Toys</p>
+                <img src="./resources/images/toysCardImg.jpg">
             </div>
             <div class="puzzles card">
-                <p>TEXT E</p>
-                <img src="./CARD_IMAGE">
+                <p>Puzzles</p>
+                <img src="./resources/images/puzzlesCardImg.jpg">
             </div>
             <div class="wallArt card">
-                <p>TEXT F</p>
-                <img src="./CARD_IMAGE">
+                <p>Wall Art</p>
+                <img src="./resources/images/wallArtCardImg.jpg">
             </div>
         </div>
     </body>
 <!--CLOSING QUOTE + CONTACT INFO-->
-    <footer>
-        <div class="quote">
-            <h3>Welcome to the homestead.</h3>
-            <h2>Where Home and Hobbies meet!</h2>
+    <footer id="contactInfo">
+<!-- NAVIGATION BOTTOM -->
+        <div class="navigation"> 
+            <ul class="navGroup">
+                <a href="./index.html#home"><li>Home</li></a>
+                <a href="./index.html#featured"><li>Featured Items</li></a>
+                <a href="./index.html#contactInfo"><li>Contact</li></a>
+            </ul>
+        </div> 
+        <div class="quoteContainer">
+            <div class="quote">
+                <h3>Welcome to the homestead.</h3>
+                <h2>Where Home and Hobbies meet!</h2>
+            </div>
         </div>
         <div class="contact">
-            <div class="address"><addr>1234 Oak Dr.</addr></div>
             <div class="phone">(888) 867-5309</div>
+            <div class="address"><addr>1234 Oak Dr.<br>City, ST 09123</addr></div>
         </div>
     </footer>
 </html>
